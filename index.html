@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Link your CSS file and other references here -->
+
+        <link rel="stylesheet" href="styles.css";>
     </head>
+
     <body>
-        <!-- Content goes here -->
+
+        <header>
+    
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <img src="assets/menu_icon.png" alt="Menu">
+            </label>
+    
+            <search>
+                <form action="/search-endpoint" method="GET" class="search-form">
+                  <input
+                    type="search"
+                    id="site-search"
+                    name="q"
+                    placeholder="Quick find"
+                    aria-label="Quick find">
+                </form>
+              </search>
+
+
+            <div class="taskcounter">
+                <img src="assets/check_icon.png" alt="">
+                <span>5/30</span>
+            </div>
+
+        </header>
+
+
+
+        <nav class="tab-container">
+            <ul class = "tab-menu">
+                <li class="tab-item"><a href="#"><img src="assets/inbox_icon.png" alt="">Inbox <span class="count">5</span></a></li>
+                <li class="tab-item"><a href="#"><img src="assets/calendar_icon.png" alt="">Today <span class="count">5</span></a></li>
+                <li class="tab-item"><a href="#"><img src="assets/upcoming_icon.png" alt="">Upcoming</a></li>
+            </ul>
+        </nav>
+        
+
+
+        <main>
+
+            <h1>Inbox</h1>
+
+            <ul id="tasklist">
+                <li>
+                    <input type="checkbox" id="task-1">
+                    <img src="assets/check_icon.png" alt="" class="check-icon">
+                    <label for="task-1">Call Mom</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task-2">
+                    <img src="assets/check_icon.png" alt="" class="check-icon">
+                    <label for="task-2">Buy the new issue of Scientific American</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task-3">
+                    <img src="assets/check_icon.png" alt="" class="check-icon">
+                    <label for="task-3">Return the textbook to Josie</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task-4">
+                    <img src="assets/check_icon.png" alt="" class="check-icon">
+                    <label for="task-4">Buy the new album by Rake</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task-5">
+                    <img src="assets/check_icon.png" alt="" class="check-icon">
+                    <label for="task-5">Buy a gift card for Dad</label>
+                </li>
+            </ul>
+        </main>
     </body>
 </html>
